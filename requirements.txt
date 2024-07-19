@@ -1,2 +1,7 @@
 streamlit
+pathlib
+streamlit_option_menu
+pillow
+requests
+streamlit_lottie
 google-generativeai
