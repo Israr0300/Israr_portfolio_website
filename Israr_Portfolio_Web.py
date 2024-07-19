@@ -516,28 +516,12 @@ I am lucky to have had so many teachers who changed my life. They are all the be
     with left_column:
         st.markdown(contact_form, unsafe_allow_html=True)
     with right_column:
-        def load_lottieurl(url: str):
-            r = requests.get(url)
-            if r.status_code != 200:
-                return None
-            return r.json()
+        pass
+
 
 
         # lottie_coding = load_lottiefile("lottiefile.json")  # replace link to local lottie file
         # lottie_hello = load_lottieurl("https://assets9.lottiefiles.com/packages/lf20_M9p23l.json")
-        lottie_hello = load_lottieurl("https://assets4.lottiefiles.com/packages/lf20_lt8ter7g.json")
-
-        st_lottie(
-            lottie_hello,
-            speed=1,
-            reverse=True,
-            loop=True,
-            quality="low",  # medium ; high
-            renderer="svg",  # canvas
-            height=None,
-            width=None,
-            key=None,
-        )
 
 if selected == "Achievements":
     with open(css_file) as f:
@@ -734,7 +718,7 @@ if selected == "Arduino Projects":
 
     # ---Machine Learning/Deep Learning/Streamlit Projects
 
-    
+
 if selected == "Deep Learning Projects":
     with open(css_file) as f:
         st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
@@ -923,27 +907,5 @@ if selected == "Contact":
     with left_column:
         st.markdown(contact_form, unsafe_allow_html=True)
     with right_column:
-        def load_lottieurl(url: str):
-            r = requests.get(url)
-            if r.status_code != 200:
-                return None
-            return r.json()
-
-            # lottie_coding = load_lottiefile("lottiefile.json")  # replace link to local lottie file
-
-
-        # lottie_hello = load_lottieurl("https://assets9.lottiefiles.com/packages/lf20_M9p23l.json")
-        lottie_hello = load_lottieurl("https://assets4.lottiefiles.com/packages/lf20_lt8ter7g.json")
-
-        st_lottie(
-            lottie_hello,
-            speed=1,
-            reverse=True,
-            loop=True,
-            quality="low",  # medium ; high
-            renderer="svg",  # canvas
-            height=None,
-            width=None,
-            key=None,
-        )
-        st.write('---')
+       pass
+    st.write('---')
