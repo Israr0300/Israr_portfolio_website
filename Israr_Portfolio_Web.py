@@ -92,7 +92,7 @@ if selected == "Home":
     DESCRIPTION = """
     Computer Vision App Developer | Computer Vision Game Developer | Deep Learning | Arduino Projects Developer | Web Developer | Educator  
     """
-    EMAIL = "azlanshly@email.com"
+    EMAIL = "azlanshly@gmail.com"
     SOCIAL_MEDIA = {
         "YouTube": "https://youtube.com",
         "LinkedIn": "https://linkedin.com",
