@@ -7,7 +7,7 @@ from PIL import Image
 import requests
 from streamlit_lottie import st_lottie
 
-api_key =st.secrets["GOOGLE_API_KEY"]
+api_key = st.secrets["GOOGLE_API_KEY"]
 genai.configure(api_key=api_key)
 model = genai.GenerativeModel('gemini-1.5-flash')
 st.set_page_config(
@@ -18,7 +18,7 @@ st.set_page_config(
 st.markdown(
     """
     <style>
-    
+
     .fade-in {
         opacity: 0;
         animation: fadeInAnimation ease 2s;
@@ -241,13 +241,13 @@ if selected == "Home":
     with col1:
 
         st.image("images/1.jpg", use_column_width=True, caption="Counting People in an image")
-        st.image("images/2.jpg", use_column_width=True,caption="Push Up Counter")
-        st.image("images/3.jpg", use_column_width=True,caption="Face Recognition System")
+        st.image("images/2.jpg", use_column_width=True, caption="Push Up Counter")
+        st.image("images/3.jpg", use_column_width=True, caption="Face Recognition System")
 
     with col2:
-        st.image("images/4.jpg", use_column_width=True,caption="Bottle Counting System")
-        st.image("images/5.jpg", use_column_width=True,caption="Vehicle classification and counting System")
-        st.image("images/6.jpg", use_column_width=True,caption="Car Parking Space Counting System")
+        st.image("images/4.jpg", use_column_width=True, caption="Bottle Counting System")
+        st.image("images/5.jpg", use_column_width=True, caption="Vehicle classification and counting System")
+        st.image("images/6.jpg", use_column_width=True, caption="Car Parking Space Counting System")
 
     st.write('---')
 
@@ -309,14 +309,14 @@ if selected == "Home":
 
     with col1:
 
-        st.image("images/7.jpg", use_column_width=True,caption="Voice Controlled Robot")
-        st.image("images/8.jpg", use_column_width=True,caption="Obstacle Avoiding Robot Using Servo Motor")
-        st.image("images/9.jpg", use_column_width=True,caption="Automatic Room Light")
+        st.image("images/7.jpg", use_column_width=True, caption="Voice Controlled Robot")
+        st.image("images/8.jpg", use_column_width=True, caption="Obstacle Avoiding Robot Using Servo Motor")
+        st.image("images/9.jpg", use_column_width=True, caption="Automatic Room Light")
 
     with col2:
-        st.image("images/10.jpg", use_column_width=True,caption="Line Following Robot")
-        st.image("images/11.jpg", use_column_width=True,caption="Android App Controlled Robot")
-        st.image("images/12.jpg", use_column_width=True,caption="Smart Dustbin")
+        st.image("images/10.jpg", use_column_width=True, caption="Line Following Robot")
+        st.image("images/11.jpg", use_column_width=True, caption="Android App Controlled Robot")
+        st.image("images/12.jpg", use_column_width=True, caption="Smart Dustbin")
     st.write('---')
 
     # ---Machine Learning/Deep Learning/Streamlit Projects
@@ -518,8 +518,6 @@ I am lucky to have had so many teachers who changed my life. They are all the be
     with right_column:
         pass
 
-
-
         # lottie_coding = load_lottiefile("lottiefile.json")  # replace link to local lottie file
         # lottie_hello = load_lottieurl("https://assets9.lottiefiles.com/packages/lf20_M9p23l.json")
 
@@ -718,7 +716,6 @@ if selected == "Arduino Projects":
 
     # ---Machine Learning/Deep Learning/Streamlit Projects
 
-
 if selected == "Deep Learning Projects":
     with open(css_file) as f:
         st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
@@ -907,5 +904,5 @@ if selected == "Contact":
     with left_column:
         st.markdown(contact_form, unsafe_allow_html=True)
     with right_column:
-       pass
+        pass
     st.write('---')
